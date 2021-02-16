@@ -20,7 +20,7 @@ jobs:
     
     - name: Build the Docker image
       run: |
-        docker build --file Dockerfile --tag ubuntu-img
+        docker build --file Dockerfile --tag ubuntu-img .
         docker save --output ubuntu-img.tar ubuntu-img
       
     - name: Show dir
