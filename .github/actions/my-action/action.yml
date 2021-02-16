@@ -1,0 +1,6 @@
+# action.yml
+name: 'Own Docker Container'
+description: 'A own docker container created by a dockerfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
