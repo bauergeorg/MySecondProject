@@ -36,4 +36,4 @@ jobs:
           docker image rm ubuntu-img
           docker load -i ubuntu-img.tar
           docker run -it -d --name ubuntu-ctr ubuntu-img
-          docker exec ubuntu-img python3 --version
+          docker exec ubuntu-ctr python3 --version
