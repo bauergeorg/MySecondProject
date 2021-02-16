@@ -20,12 +20,12 @@ jobs:
     
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ubuntu-img
-    
+      
     - name: Show dir
       run: ls
       
     - name: Upload result
-        uses: actions/upload-artifact@v2
-        with:
-          name: ubuntu-img
-          path: ubuntu-img:latest
+      uses: actions/upload-artifact@v2
+      with:
+        name: ubuntu-img
+        path: ubuntu-img:latest
