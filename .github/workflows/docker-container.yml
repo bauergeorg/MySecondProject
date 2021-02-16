@@ -31,5 +31,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
+          docker build --file Dockerfile --tag ubuntu-img .
+          docker save --output ubuntu-img.tar ubuntu-img
+          docker image rm ubuntu-img
           docker load -i ubuntu-img.tar
           docker run -it -d --name ubuntu-ctr ubuntu-img
+          docker exec python3 --version
