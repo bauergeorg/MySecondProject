@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: docker run -it -d --name ubuntu-ctrx 1613483501
+        run: docker run -it -d --name ubuntu-ctrx ubuntu-img
